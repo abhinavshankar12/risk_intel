@@ -97,6 +97,7 @@ celerybeat.pid
 
 # Environments
 .env
+!.env.example
 .venv
 env/
 venv/
@@ -133,3 +134,17 @@ dmypy.json
 .DS_Store
 Thumbs.db
 
+# Project specific
+models/*.joblib
+!models/.gitkeep
+data/*
+!data/.gitkeep
+*.dump
+*.backup
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env.local
+frontend/package-lock.json
